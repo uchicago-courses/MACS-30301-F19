@@ -1,0 +1,118 @@
+#+LATEX_HEADER:  \usepackage{bibentry}
+#+LATEX_HEADER:  \nobibliography*
+
+#+BEGIN_CENTER
+-------------------------------------------------
+
+*MACS 30301 - Introduction to Bayesian Statistics*
+
+Computational Social Science
+
+Division of the Social Sciences
+
+University of Chicago
+
+Autumn/2019
+-------------------------------------------------
+#+END_CENTER
+
+* Course information
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+ATTR_LaTeX: :center nil :align rl
+| *Instructor:*   | [[https://.diogoferrari.com][Diogo Ferrari]]                          |
+| *e-mail:*       | [[mailto:diogoferrari@uchicago.edu][diogoferrari@uchicago.edu]]              |
+| *Office:*       | 5730 S. Woodlawn, Room 406             |
+| *Office-hours:* | Monday 15:00-17:00 (or by appointment) |
+|                 |                                        |
+|                 |                                        |
+| *TA:*           | TBA                                    |
+
+
+- *Meeting day/time*  MWF 10:30-11:20 
+
+* Description
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+The goal of this course is to give students an overview of the theory and methods for data analyses using the Bayesian paradigm. Topics include: (1) foundations of Bayesian inference; (2) development of Bayesian models and prior choices; (3) analytical and simulation techniques for posterior estimation; (4) model choice and diagnostics; (5) sensitivity analysis, and; (6) introduction to Monte Carlo Markov Chain (MCMC) simulations. Students will also learn how to estimate and summarize Bayesian models using Bayesian statistical packages (R/JAGS/Bugs). The course will use working examples with real application of Bayesian analysis in social sciences. Prerequisites: Basic knowledge of probability (e.g., joint and conditional distributions, expectation, variance) and introductory-level experience with R or Python (Note: Open to Advanced Undergraduates with Instructor Permission)
+* Evaluation
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+ATTR_LaTeX: :center nil :align |r|c|c|
+|--------------+-------+--------------|
+|              | Total | Total weight |
+|--------------+-------+--------------|
+| Problem sets |     8 |          80% |
+| Final exam   |     1 |          20% |
+|--------------+-------+--------------|
+
+* Disability Service and Accomodation
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+If you need any special accommodations, please provide your instructor with a copy of your Accommodation Determination Letter (provided to you by the Student Disability Services office) as soon as possible so that you may discuss with him/her how your accommodations may be implemented in this course.
+* Schedule  
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+#+INCLUDE: "./schedule.org::#calendar" 
+#+INCLUDE: "./schedule.org::#readings" 
+
+* Textbooks
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+*** Required
+- bibentry:gill2014bayesian\\
+  /Practical introduction of the concepts of Bayesian statistics with examples of application in social sciences./
+
+*** Recommended
+- bibentry:gelman2004bayesian\\
+  /Called for many people "The Bible", this book contains a comprehensive overview of many topics in Bayesian statistics./
+- bibentry:jackman2009bayesian\\
+  /The book contains more advanced treatment of some topics in Bayesian analysis./
+- bibentry:kruschke2015doing\\
+  /This is an introduction-level book with many examples and illustrations of Bayesian analysis. It covers the computational side, and it is a useful tutorial-like approach for practical implementation of Bayesian models in JAGS./
+
+* Software
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+- bibentry:r2018\\
+  /Free statistical software available for download at [[https://www.r-project.org/][this]] website. The software is available for all main operation system (Linux, OS, Windows)/
+- bibentry:plummer2017jags\\
+  /Free software for Bayesian analysis available for download at [[https://sourceforge.net/projects/mcmc-jags/files/][this]] website. The software is available for UNIX based operation system (Linux, OS)./
+- bibentry:lunn2012bugs\\
+  /Windows users can install the free windows based version called WinBUGS instead of JAGS, which is available for download at [[https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-winbugs/][this]] website/
+- bibentry:plummer2018 
+  /R package used to estimate Bayesian models using JAGS./
+* Academic Integrity
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+The University of Chicago has a [[https://studentmanual.sites.uchicago.edu/Policies#Honesty][formal policy on academic honesty]] that you are expected to adhere to. Here are some guidelines we expect you to follow:
+1. Courtesy, honesty, and respect should be shown by students toward faculty members, guest lecturers, administrative support staff, and fellow students. Similarly, students should expect faculty to treat them fairly, showing respect for their ideas and opinions and striving to help them achieve maximum benefits from their experience in the School.
+2. Academic dishonesty can encompass many activities, which includes plagiarism, cheating, fabrication, falsification of records or official documents, intentional misuse of equipment or materials (including library materials), and aiding and abetting the perpetration of such acts. One of the gravest academic dishonesty is plagiarism: knowingly handing in someone else's work as your own, whether it be work done by another student in the class or available publicly on the Internet. This class has a zero tolerance policy for plagiarism.
+3. The preparation of solutions for problem sets, papers, and examinations, assigned on an individual basis, must represent each students own effort. Therefore:
+   - You MUST NOT copy or use someone else's work (with or without their permission) in your own solution. You have to write your own.
+   - DO NOT post your solutions to problem sets or exams in publicly-accessible websites, like pastebin, a public GitHub repository, GitHub gists, etc. While these tools may seem like convenient mechanisms for sharing code with an instructor/TA or with a project partner, they can also expose your code to other students in the class. If you do post your solution in a publicly-accessible location, and we find out about it outside of a plagiarism incident, you will just get a warning. However, if another student in the class uses code that you posted on such a site (even if you did not intend for that code to be used by someone else), you be considered an equally guilty party in a plagiarism offense, and will receive the exact same penalty as the student who used your code.
+
+
+
+* References                                                      :ignore:
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+#+BEGIN_SRC latex
+\pagebreak
+#+END_SRC
+bibliographystyle:apalike
+bibliography:~/Dropbox/CienciasSociais/references/references.bib
+
