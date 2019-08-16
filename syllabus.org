@@ -61,6 +61,8 @@ If you need any special accommodations, please provide your instructor with a co
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
+
+*** See [[./schedule.org][Schedule]]                                                     :ignore:
 #+INCLUDE: "./schedule.org::#calendar" 
 #+INCLUDE: "./schedule.org::#readings" 
 
@@ -69,28 +71,28 @@ If you need any special accommodations, please provide your instructor with a co
 :UNNUMBERED: t
 :END:
 *** Required
-- bibentry:gill2014bayesian\\
+- Gill, J. (2014) Bayesian methods: a social and behavioral sciences approach: CRC press.\\
   /Practical introduction of the concepts of Bayesian statistics with examples of application in social sciences./
 
 *** Recommended
-- bibentry:gelman2004bayesian\\
+- Gelman, A., Carlin, J. B., Stern, H. S., & Rubin, D. B.  (2014) Bayesian Data Analysis, Chapman & Hall/CRC Boca Raton, FL, USA.\\
   /Called for many people "The Bible", this book contains a comprehensive overview of many topics in Bayesian statistics./
-- bibentry:jackman2009bayesian\\
+- Jackman, S. (2009)  Bayesian analysis for the social sciences , John Wiley & Sons.\\
   /The book contains more advanced treatment of some topics in Bayesian analysis./
-- bibentry:kruschke2015doing\\
+- Kruschke, J. (2015) Doing bayesian data analysis: a tutorial with r, jags, and stan, Academic Press.\\
   /This is an introduction-level book with many examples and illustrations of Bayesian analysis. It covers the computational side, and it is a useful tutorial-like approach for practical implementation of Bayesian models in JAGS./
 
 * Software
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
-- bibentry:r2018\\
+- Team, R. C. (2018) R: a language and environment for statistical computing.\\
   /Free statistical software available for download at [[https://www.r-project.org/][this]] website. The software is available for all main operation system (Linux, OS, Windows)/
-- bibentry:plummer2017jags\\
+- Plummer, M., Stukalov, A., & Denwood, M. (2018) Rjags: r api to jags.\\
   /Free software for Bayesian analysis available for download at [[https://sourceforge.net/projects/mcmc-jags/files/][this]] website. The software is available for UNIX based operation system (Linux, OS)./
-- bibentry:lunn2012bugs\\
+- Lunn, D., Jackson, C., Best, N., Thomas, A., & Spiegelhalter, D. (2012) The bugs book: a practical introduction to bayesian analysis, CRC press.\\
   /Windows users can install the free windows based version called WinBUGS instead of JAGS, which is available for download at [[https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-winbugs/][this]] website/
-- bibentry:plummer2018 
+- Plummer, M. (2017) Jags version 4.3.0 user manual.\\
   /R package used to estimate Bayesian models using JAGS./
 * Academic Integrity
 :PROPERTIES:
