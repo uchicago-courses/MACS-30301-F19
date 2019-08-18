@@ -8,10 +8,9 @@
 #+LATEX_HEADER:    {\thesection}{1em}{}
 
 
-
+*  MACS 30301 - Introduction to Bayesian Statistics                  :ignore:
 --------------------------------------------------
-#+begin_center
-#+HTML: <p style="text-align: center;">
+#+begin_center 
 *MACS 30301 - Introduction to Bayesian Statistics*
 
 Computational Social Science
@@ -21,14 +20,8 @@ Division of the Social Sciences
 University of Chicago
 
 Autumn/2019
-#+HTML: </p>
 #+end_center
 --------------------------------------------------
-
-
-
-
-
 * Course information
 :PROPERTIES:
 :UNNUMBERED: t
