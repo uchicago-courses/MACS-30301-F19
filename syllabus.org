@@ -1,19 +1,22 @@
 #+LATEX_HEADER:  \usepackage{bibentry}
 #+LATEX_HEADER:  \nobibliography*
+#+LATEX_HEADER:  \usepackage{titlesec}
+#+LATEX_HEADER:  \titleformat{\chapter}[display]
+#+LATEX_HEADER:    {\normalfont\sffamily\huge\bfseries\color{blue}}
+#+LATEX_HEADER:    {\chaptertitlename\ \thechapter}{20pt}{\normalsize} \titleformat{\section}
+#+LATEX_HEADER:    {\normalfont\sffamily\large\bfseries\color{Black}}
+#+LATEX_HEADER:    {\thesection}{1em}{}
+#+LaTeX_HEADER: \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
 #+BEGIN_CENTER
--------------------------------------------------
-
-*MACS 30301 - Introduction to Bayesian Statistics*
-
-Computational Social Science
-
-Division of the Social Sciences
-
-University of Chicago
-
-Autumn/2019
--------------------------------------------------
+#+ATTR_LATEX: :align P{15cm} :font \large 
+|----------------------------------------------------|
+| *MACS 30301 - Introduction to Bayesian Statistics* |
+| Computational Social Science                       |
+| Division of the Social Sciences                    |
+| University of Chicago                              |
+| Autumn/2019                                        |
+|----------------------------------------------------|
 #+END_CENTER
 
 * Course information
