@@ -1,13 +1,11 @@
 #+LATEX_HEADER:  \usepackage{bibentry}
 #+LATEX_HEADER:  \nobibliography*
 
+#+BEGIN_CENTER
 -------------------------------------------------
-#+BEGIN_SRC latex
-\begin{center}
-\large
-\textbf{MACS 30301 - Introduction to Bayesian Statistics}
 
-\normalsize
+*MACS 30301 - Introduction to Bayesian Statistics*
+
 Computational Social Science
 
 Division of the Social Sciences
@@ -15,9 +13,8 @@ Division of the Social Sciences
 University of Chicago
 
 Autumn/2019
-\end{center}
-#+END_SRC
 -------------------------------------------------
+#+END_CENTER
 
 * Course information
 :PROPERTIES:
