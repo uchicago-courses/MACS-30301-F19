@@ -9,7 +9,7 @@
 
 
 
-#+BEGIN_SRC latex :exports results :results output
+#+BEGIN_SRC latex :exports results :results output latex
 \begin{center}
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -26,6 +26,8 @@ Autumn/2019
 --------------------------------------------------------------------------------------------------------------------------
 \end{center}
 #+END_SRC
+
+
 
 * Course information
 :PROPERTIES:
