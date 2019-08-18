@@ -9,7 +9,7 @@
 
 
 
-#+BEGIN_SRC latex :exports results :results output latex
+#+BEGIN_SRC latex
 \begin{center}
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -26,6 +26,26 @@ Autumn/2019
 --------------------------------------------------------------------------------------------------------------------------
 \end{center}
 #+END_SRC
+
+#+RESULTS:
+#+BEGIN_EXPORT html
+\begin{center}
+--------------------------------------------------------------------------------------------------------------------------
+
+\textbf{\Large MACS 30301 - Introduction to Bayesian Statistics}
+
+Computational Social Science
+
+Division of the Social Sciences
+
+University of Chicago
+
+Autumn/2019
+
+--------------------------------------------------------------------------------------------------------------------------
+\end{center}
+#+END_EXPORT
+
 
 
 
