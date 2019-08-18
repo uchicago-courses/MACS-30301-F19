@@ -8,26 +8,12 @@
 #+LATEX_HEADER:    {\thesection}{1em}{}
 
 
-#+BEGIN_CENTER
--------------------------------------------------
-*MACS 30301 - Introduction to Bayesian Statistics*
-
-Computational Social Science
-
-Division of the Social Sciences
-
-University of Chicago
-
-Autumn/2019
--------------------------------------------------
-#+END_CENTER
-
 
 #+BEGIN_SRC latex :exports results :results output
 \begin{center}
---------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
-\textbf{\large MACS 30301 - Introduction to Bayesian Statistics}
+\textbf{\Large MACS 30301 - Introduction to Bayesian Statistics}
 
 Computational Social Science
 
@@ -37,7 +23,7 @@ University of Chicago
 
 Autumn/2019
 
---------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 \end{center}
 #+END_SRC
 
