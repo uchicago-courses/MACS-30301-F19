@@ -8,9 +8,9 @@
 #+LATEX_HEADER:    {\thesection}{1em}{}
 
 
-*  MACS 30301 - Introduction to Bayesian Statistics                  :ignore:
---------------------------------------------------
+* MACS 30301 - Introduction to Bayesian Statistics                  :ignore:
 #+BEGIN_SRC latex :exports results :results raw
+--------------------------------------------------
 \begin{center}
 \textbf{\Large MACS 30301 - Introduction to Bayesian Statistics}
 
@@ -22,8 +22,8 @@ University of Chicago
 
 Autumn/2019
 \end{center}
-#+END_SRC
 --------------------------------------------------
+#+END_SRC
 * Course information
 :PROPERTIES:
 :UNNUMBERED: t
