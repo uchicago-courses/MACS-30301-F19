@@ -10,8 +10,9 @@
 
 *  MACS 30301 - Introduction to Bayesian Statistics                  :ignore:
 --------------------------------------------------
-#+begin_center 
-*MACS 30301 - Introduction to Bayesian Statistics*
+#+BEGIN_SRC latex :exports results :results raw
+\begin{center}
+\textbf{\Large MACS 30301 - Introduction to Bayesian Statistics}
 
 Computational Social Science
 
@@ -20,14 +21,15 @@ Division of the Social Sciences
 University of Chicago
 
 Autumn/2019
-#+end_center
+\end{center}
+#+END_SRC
 --------------------------------------------------
 * Course information
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
 
-#+ATTR_LaTeX: :center nil :align rl
+#+ATTR_LaTeX: :center t :align rl
 | *Instructor:*   | [[https://.diogoferrari.com][Diogo Ferrari]]                          |
 | *e-mail:*       | [[mailto:diogoferrari@uchicago.edu][diogoferrari@uchicago.edu]]              |
 | *Office:*       | 5730 S. Woodlawn, Room 406             |
