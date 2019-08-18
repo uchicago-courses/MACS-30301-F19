@@ -10,9 +10,9 @@
 
 
 --------------------------------------------------
-\begin{center}
+#+begin_center
 
-\textbf{\Large MACS 30301 - Introduction to Bayesian Statistics}
+*MACS 30301 - Introduction to Bayesian Statistics*
 
 Computational Social Science
 
@@ -22,7 +22,7 @@ University of Chicago
 
 Autumn/2019
 
-\end{center}
+#+end_center
 --------------------------------------------------
 
 
