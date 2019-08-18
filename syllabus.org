@@ -4,8 +4,10 @@
 #+BEGIN_CENTER
 -------------------------------------------------
 
+\large 
 *MACS 30301 - Introduction to Bayesian Statistics*
 
+\normalsize
 Computational Social Science
 
 Division of the Social Sciences
@@ -61,10 +63,54 @@ If you need any special accommodations, please provide your instructor with a co
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
-
-*** See [[./schedule.org][Schedule]]                                                     :ignore:
-#+INCLUDE: "./schedule.org::#calendar" 
-#+INCLUDE: "./schedule.org::#readings" 
+*** Calendar
+#+ATTR_LATEX: :align |c|c|l|p{9cm}|l| :font \footnotesize
+|----+------+-----+-----------------------+---------------------|
+|  # | Week | Day | Topic                 | Assignment          |
+|----+------+-----+-----------------------+---------------------|
+|  1 |    1 |     | The Bayesian Paradigm |                     |
+|  2 |    1 |     |                       |                     |
+|  3 |    1 |     |                       | PS1 (ho)            |
+|----+------+-----+-----------------------+---------------------|
+|  4 |    2 |     |                       |                     |
+|  5 |    2 |     |                       |                     |
+|  6 |    2 |     |                       | PS2 (ho); *PS1 (d)* |
+|----+------+-----+-----------------------+---------------------|
+|  7 |    3 |     |                       |                     |
+|  8 |    3 |     |                       |                     |
+|  9 |    3 |     |                       | PS3 (ho); *PS2 (d)* |
+|----+------+-----+-----------------------+---------------------|
+| 10 |    4 |     |                       |                     |
+| 11 |    4 |     |                       |                     |
+| 12 |    4 |     |                       | PS4 (ho); *PS3 (d)* |
+|----+------+-----+-----------------------+---------------------|
+| 13 |    5 |     |                       |                     |
+| 14 |    5 |     |                       |                     |
+| 15 |    5 |     |                       | PS5 (ho); *PS4 (d)* |
+|----+------+-----+-----------------------+---------------------|
+| 16 |    6 |     |                       |                     |
+| 17 |    6 |     |                       |                     |
+| 18 |    6 |     |                       | PS6 (ho); *PS5 (d)* |
+|----+------+-----+-----------------------+---------------------|
+| 19 |    7 |     |                       |                     |
+| 20 |    7 |     |                       |                     |
+| 21 |    7 |     |                       | PS7 (ho); *PS6 (d)* |
+|----+------+-----+-----------------------+---------------------|
+| 22 |    8 |     |                       |                     |
+| 23 |    8 |     |                       |                     |
+| 24 |    8 |     |                       | PS8 (ho); *PS7 (d)* |
+|----+------+-----+-----------------------+---------------------|
+| 25 |    9 |     |                       |                     |
+| 26 |    9 |     |                       |                     |
+| 27 |    9 |     |                       | *PS8 (d)*           |
+|----+------+-----+-----------------------+---------------------|
+| 28 |   10 |     |                       |                     |
+| 29 |   10 |     |                       |                     |
+| 30 |   10 |     |                       | *Final Exam*        |
+|----+------+-----+-----------------------+---------------------|
+- ho: hand out
+- d: due date
+*** Scheduled readings
 
 * Textbooks
 :PROPERTIES:
@@ -107,14 +153,4 @@ The University of Chicago has a [[https://studentmanual.sites.uchicago.edu/Polic
    - DO NOT post your solutions to problem sets or exams in publicly-accessible websites, like pastebin, a public GitHub repository, GitHub gists, etc. While these tools may seem like convenient mechanisms for sharing code with an instructor/TA or with a project partner, they can also expose your code to other students in the class. If you do post your solution in a publicly-accessible location, and we find out about it outside of a plagiarism incident, you will just get a warning. However, if another student in the class uses code that you posted on such a site (even if you did not intend for that code to be used by someone else), you be considered an equally guilty party in a plagiarism offense, and will receive the exact same penalty as the student who used your code.
 
 
-
-* References                                                      :ignore:
-  :PROPERTIES:
-  :UNNUMBERED: t
-  :END:
-#+BEGIN_SRC latex
-\pagebreak
-#+END_SRC
-bibliographystyle:apalike
-bibliography:~/Dropbox/CienciasSociais/references/references.bib
 
