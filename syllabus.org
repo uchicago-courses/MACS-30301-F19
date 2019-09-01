@@ -61,11 +61,114 @@ The goal of this course is to give students an overview of the theory and method
 | Final exam   |     1 |          20% |
 |--------------+-------+--------------|
 
-* Disability Service and Accomodation
+* Schedule                                                         :noexport:
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
-If you need any special accommodations, please provide your instructor with a copy of your Accommodation Determination Letter (provided to you by the Student Disability Services office) as soon as possible so that you may discuss with him/her how your accommodations may be implemented in this course.
+*** Calendar
+#+ATTR_LATEX: :align |c|c|l|p{9cm}|l| :font \footnotesize
+
+
+Ideas for problem sets
+- some to derive analytically the posterior with conjugate prior
+- some with non analytical solution, bot easy to simulate
+- some intractable
+- Review previous solutions of PS, as ask how to estimate prior using MCMC
+  
+Topics
+- Priors
+  - Relative to the origem
+	- Elicited
+	  - Informative
+	  - Uninformative
+	  - Improper
+	- Objective
+	  - Jeffreys
+	  - Reference
+  - Relative to its relation to p(theta | x)
+	- Conjugate
+- Hierarchical models
+- MCMC
+  - MCMC estimation
+  - MCMC convergence
+	- cite:cowles1996markov
+- Summaries of the posterior
+  - mean
+  - median
+  - 95% HPDI
+  - BIC, DIC
+  - Bayes Factor
+- Examples
+  - FMM of normals
+
+
+|  # |      |     |                                             |                                                                                   |            | <10>       | <30>                           |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+|  # | Week | Day | Topic                                       | Lecture content                                                                   |            | Assignment | Assignment Content             |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+|  1 |    1 |     | Introduction                                | Course introduction, bayes rule, history                                          |            |            |                                |
+|  2 |    1 |     | Motivation for Bayesian Statistics          | de Finetti, Examples, Decision Theory                                             |            |            |                                |
+|  3 |    1 |     | The prior distribution: Preliminaries       | estimating posterior, definitions of various priors, examples, kernel, exp family | JG 4.1-4.2 | PS1 (ho)   | (derive exp family for various dist ) |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+|  4 |    2 |     | Prior Distribution (conjugate priors)       |                                                                                   | JG 4.3     |            |                                |
+|  5 |    2 |     | Prior Distribution (conjugate priors)       |                                                                                   |            |            |                                |
+|  6 |    2 |     | Prior Distribution                          |                                                                                   |            | PS2 (ho); *PS1 (d)* | (analytical der of normal-normal) |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+|  7 |    3 |     | Prior Distribution                          | (Jeffrey's)                                                                       |            |            |                                |
+|  8 |    3 |     | Prior Distribution                          | (Objective Bayes, objective prior and reference prior see MJ lec 7)               |            |            |                                |
+|  9 |    3 |     | Prior Distribution                          | (more on objective bayes)                                                         |            | PS3 (ho); *PS2 (d)* | (effect of diff priors)        |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 10 |    4 |     | Sensitivity and Prior perturbation analysis |                                                                                   |            |            |                                |
+| 11 |    4 |     | Sensitivity and Prior perturbation analysis |                                                                                   |            |            |                                |
+| 12 |    4 |     | Hierarchical Bayesian Models                |                                                                                   |            | PS4 (ho); *PS3 (d)* | (derive hiearachical, Sensitivity) |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 13 |    5 |     | MC esitmation                               |                                                                                   |            |            |                                |
+| 14 |    5 |     | MCMC intro                                  |                                                                                   |            |            |                                |
+| 15 |    5 |     |                                             |                                                                                   |            | PS5 (ho); *PS4 (d)* |                                |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 16 |    6 |     |                                             |                                                                                   |            |            |                                |
+| 17 |    6 |     |                                             |                                                                                   |            |            |                                |
+| 18 |    6 |     |                                             |                                                                                   |            | PS6 (ho); *PS5 (d)* |                                |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 19 |    7 |     |                                             |                                                                                   |            |            |                                |
+| 20 |    7 |     |                                             |                                                                                   |            |            |                                |
+| 21 |    7 |     |                                             |                                                                                   |            | PS7 (ho); *PS6 (d)* |                                |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 22 |    8 |     |                                             |                                                                                   |            |            |                                |
+| 23 |    8 |     |                                             |                                                                                   |            |            |                                |
+| 24 |    8 |     |                                             |                                                                                   |            | PS8 (ho); *PS7 (d)* |                                |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 25 |    9 |     |                                             |                                                                                   |            |            |                                |
+| 26 |    9 |     |                                             |                                                                                   |            |            |                                |
+| 27 |    9 |     |                                             |                                                                                   |            | *PS8 (d)*  |                                |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+| 28 |   10 |     | Summaries of the posterior                  |                                                                                   |            |            |                                |
+| 29 |   10 |     | Summaries of the posterior                  |                                                                                   |            |            |                                |
+| 30 |   10 |     |                                             |                                                                                   |            | *Final Exam* |                                |
+|----+------+-----+---------------------------------------------+-----------------------------------------------------------------------------------+------------+------------+--------------------------------|
+- ho: hand out
+- d: due date
+*** Scheduled readings
+**** Lecture 1: The Bayesian Paradigm
+***** Optional
+- Fienberg, S. E., & Others,  (2006). /When Did Bayesian Inference Become "Bayesian"?/, Bayesian Analysis, *1(1)*, 1–40. 
+**** Lecture 2: Motivation for Bayesian Statistics
+***** Required
+****** cite:gill2014bayesian - Chapter 2.1: Purpose
+****** cite:gill2014bayesian - Chapter 2.2: The Basic Bayesian Framework
+****** cite:gill2014bayesian - Chapter 2.4: Bayesian “Learning”
+****** cite:gill2014bayesian - Chapter 2.6: Bayesian versus Non-Bayesian Approaches
+**** Lecture 3: Prior Distribution: Preliminaries
+***** Required
+****** cite:gill2014bayesian - Ch 2.5: Comments on Prior Distributions
+****** cite:gill2014bayesian - Ch 4.1: A Prior Discussion of Priors
+****** 
+***** Optional
+****** cite:wasserman-2006-frequestist
+**** Lecture X: Summaries of the Posterior
+***** Required
+****** cite:gill2014bayesian - Chapter 2.3.2 Summarizing Posterior Distributions with Intervals
+****** cite:gill2014bayesian - Chapter 2.3.3 Quantile Posterior Summaries
 * Textbooks
 :PROPERTIES:
 :UNNUMBERED: t
@@ -92,6 +195,23 @@ If you need any special accommodations, please provide your instructor with a co
   /Windows users can install the free windows based version called WinBUGS instead of JAGS, which is available for download at [[https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-winbugs/][this]] website/
 - Plummer, M. (2017) Jags version 4.3.0 user manual.\\
   /R package used to estimate Bayesian models using JAGS./
+* Diversity, Inclusion, and Disability Statement
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+This course is open to all students who meet the academic requirements for participation. Any student who has a documented need for accommodation should contact Student Disability Services (773-702-6000 or disabilities@uchicago.edu) and the instructor as soon as possible.
+
+
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity students bring to this class be viewed as a resource, strength, and benefit. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups. Your suggestions are encouraged and appreciated.
+
+It is my intent to present materials and activities that are respectful of diversity: gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, and culture. I will attempt to foster an environment in which each class member is able to hear and respect one another. It is my intent to maintain an atmosphere of trust and safety in the classroom. Please let me know if something said or done in the classroom, by either myself or other students, is particularly troubling or causes discomfort or offense. While our intention may not be to cause discomfort or offense, the impact of what happens throughout the course is not to be ignored and is something that I consider to be very important and deserving of attention. If and when this occurs, there are several ways to alleviate some of the discomfort or hurt you may experience:
+
+1. Discuss the situation privately with me. I am always open to listening to students' experiences and want to work with students to find acceptable ways to process and address the issue.
+2. Discuss the situation with the class. Chances are there is at least one other student in the class who had a similar response to the material. Discussion enhances the ability for all class participants to have a fuller understanding of context and impact of course material and class discussions.
+3. Notify me of the issue through another source such as your preceptor, a trusted faculty member, or a peer. If for any reason you do not feel comfortable discussing the issue directly with me, I encourage you to contact your preceptor and/or your program's Diversity and Inclusion representative: Darcy Heuring (MAPSS), Matthias Staisch (CIR), and Chad Cyrenne (Computation). You are also welcome and encouraged to contact the Faculty Director of your program.
+
+The University of Chicago is committed to diversity and rigorous inquiry from multiple perspectives. The MAPSS, CIR, and Computation programs share this commitment and seek to foster productive learning environments based upon inclusion, open communication, and mutual respect for a diverse range of identities, experiences, and positions. Any suggestions for how we might further such objectives both in and outside the classroom are appreciated and will be given serious consideration. Please share your suggestions or concerns with your instructor, your preceptor, or your program’s Diversity and Inclusion representatives: Darcy Heuring (MAPSS), Matthias Staisch (CIR), and Chad Cyrenne (Computation). You are also welcome and encouraged to contact the Faculty Director of your program.
 * Academic Integrity
 :PROPERTIES:
 :UNNUMBERED: t
