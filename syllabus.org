@@ -1,5 +1,3 @@
-#+LATEX_HEADER:  \usepackage{bibentry}
-#+LATEX_HEADER:  \nobibliography*
 #+LATEX_HEADER:  \usepackage{titlesec}
 #+LATEX_HEADER:  \titleformat{\chapter}[display]
 #+LATEX_HEADER:    {\normalfont\sffamily\huge\bfseries\color{blue}}
@@ -9,6 +7,7 @@
 
 
 * MACS 30301 - Introduction to Bayesian Statistics                  :ignore:
+
 #+BEGIN_SRC latex :exports results :results raw
 --------------------------------------------------
 \begin{center}
@@ -39,7 +38,8 @@ Autumn/2019
 | *TA:*           | TBA                                    |
 
 
-- *Meeting day/time*  MWF 10:30-11:20 
+- *Meeting day/time*  MWF 10:30-11:20
+- *Location*: Stuart Hall 105
 
 * Description
 :PROPERTIES:
@@ -47,6 +47,7 @@ Autumn/2019
 :END:
 
 The goal of this course is to give students an overview of the theory and methods for data analyses using the Bayesian paradigm. Topics include: (1) foundations of Bayesian inference; (2) development of Bayesian models and prior choices; (3) analytical and simulation techniques for posterior estimation; (4) model choice and diagnostics; (5) sensitivity analysis, and; (6) introduction to Monte Carlo Markov Chain (MCMC) simulations. Students will also learn how to estimate and summarize Bayesian models using Bayesian statistical packages (R/JAGS/Bugs). The course will use working examples with real application of Bayesian analysis in social sciences. Prerequisites: Basic knowledge of probability (e.g., joint and conditional distributions, expectation, variance) and introductory-level experience with R or Python (Note: Open to Advanced Undergraduates with Instructor Permission)
+
 * Evaluation
 :PROPERTIES:
 :UNNUMBERED: t
@@ -65,59 +66,6 @@ The goal of this course is to give students an overview of the theory and method
 :UNNUMBERED: t
 :END:
 If you need any special accommodations, please provide your instructor with a copy of your Accommodation Determination Letter (provided to you by the Student Disability Services office) as soon as possible so that you may discuss with him/her how your accommodations may be implemented in this course.
-* Schedule  
-:PROPERTIES:
-:UNNUMBERED: t
-:END:
-*** Calendar
-#+ATTR_LATEX: :align |c|c|l|p{9cm}|l| :font \footnotesize
-|----+------+-----+-----------------------+---------------------|
-|  # | Week | Day | Topic                 | Assignment          |
-|----+------+-----+-----------------------+---------------------|
-|  1 |    1 |     | The Bayesian Paradigm |                     |
-|  2 |    1 |     |                       |                     |
-|  3 |    1 |     |                       | PS1 (ho)            |
-|----+------+-----+-----------------------+---------------------|
-|  4 |    2 |     |                       |                     |
-|  5 |    2 |     |                       |                     |
-|  6 |    2 |     |                       | PS2 (ho); *PS1 (d)* |
-|----+------+-----+-----------------------+---------------------|
-|  7 |    3 |     |                       |                     |
-|  8 |    3 |     |                       |                     |
-|  9 |    3 |     |                       | PS3 (ho); *PS2 (d)* |
-|----+------+-----+-----------------------+---------------------|
-| 10 |    4 |     |                       |                     |
-| 11 |    4 |     |                       |                     |
-| 12 |    4 |     |                       | PS4 (ho); *PS3 (d)* |
-|----+------+-----+-----------------------+---------------------|
-| 13 |    5 |     |                       |                     |
-| 14 |    5 |     |                       |                     |
-| 15 |    5 |     |                       | PS5 (ho); *PS4 (d)* |
-|----+------+-----+-----------------------+---------------------|
-| 16 |    6 |     |                       |                     |
-| 17 |    6 |     |                       |                     |
-| 18 |    6 |     |                       | PS6 (ho); *PS5 (d)* |
-|----+------+-----+-----------------------+---------------------|
-| 19 |    7 |     |                       |                     |
-| 20 |    7 |     |                       |                     |
-| 21 |    7 |     |                       | PS7 (ho); *PS6 (d)* |
-|----+------+-----+-----------------------+---------------------|
-| 22 |    8 |     |                       |                     |
-| 23 |    8 |     |                       |                     |
-| 24 |    8 |     |                       | PS8 (ho); *PS7 (d)* |
-|----+------+-----+-----------------------+---------------------|
-| 25 |    9 |     |                       |                     |
-| 26 |    9 |     |                       |                     |
-| 27 |    9 |     |                       | *PS8 (d)*           |
-|----+------+-----+-----------------------+---------------------|
-| 28 |   10 |     |                       |                     |
-| 29 |   10 |     |                       |                     |
-| 30 |   10 |     |                       | *Final Exam*        |
-|----+------+-----+-----------------------+---------------------|
-- ho: hand out
-- d: due date
-*** Scheduled readings
-
 * Textbooks
 :PROPERTIES:
 :UNNUMBERED: t
@@ -125,7 +73,6 @@ If you need any special accommodations, please provide your instructor with a co
 *** Required
 - Gill, J. (2014) Bayesian methods: a social and behavioral sciences approach: CRC press.\\
   /Practical introduction of the concepts of Bayesian statistics with examples of application in social sciences./
-
 *** Recommended
 - Gelman, A., Carlin, J. B., Stern, H. S., & Rubin, D. B.  (2014) Bayesian Data Analysis, Chapman & Hall/CRC Boca Raton, FL, USA.\\
   /Called for many people "The Bible", this book contains a comprehensive overview of many topics in Bayesian statistics./
@@ -133,7 +80,6 @@ If you need any special accommodations, please provide your instructor with a co
   /The book contains more advanced treatment of some topics in Bayesian analysis./
 - Kruschke, J. (2015) Doing bayesian data analysis: a tutorial with r, jags, and stan, Academic Press.\\
   /This is an introduction-level book with many examples and illustrations of Bayesian analysis. It covers the computational side, and it is a useful tutorial-like approach for practical implementation of Bayesian models in JAGS./
-
 * Software
 :PROPERTIES:
 :UNNUMBERED: t
