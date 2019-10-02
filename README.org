@@ -2,11 +2,11 @@
 * MACS 30301 - Introduction to Bayesian Statistics 
 
 
-Computational Social Science\\
+Computational Social Science
 
-Division of the Social Sciences\\
+Division of the Social Sciences
 
-University of Chicago\\
+University of Chicago
 
 Autumn/2019
 
