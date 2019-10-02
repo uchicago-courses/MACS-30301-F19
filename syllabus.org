@@ -4,7 +4,8 @@
 #+LATEX_HEADER:    {\chaptertitlename\ \thechapter}{20pt}{\normalsize} \titleformat{\section}
 #+LATEX_HEADER:    {\normalfont\sffamily\large\bfseries\color{Black}}
 #+LATEX_HEADER:    {\thesection}{1em}{}
-
+#+LATEX_HEADER:  \usepackage{bibentry}
+#+LATEX_HEADER:  \nobibliography*
 
 * MACS 30301 - Introduction to Bayesian Statistics                  :ignore:
 
@@ -34,8 +35,6 @@ Autumn/2019
 | *Office:*       | 5730 S. Woodlawn, Room 406             |
 | *Office-hours:* | Monday 15:00-17:00 (or by appointment) |
 |                 |                                        |
-|                 |                                        |
-| *TA:*           | TBA                                    |
 
 
 - *Meeting day/time*  MWF 10:30-11:20
@@ -57,10 +56,204 @@ The goal of this course is to give students an overview of the theory and method
 |--------------+-------+--------------|
 |              | Total | Total weight |
 |--------------+-------+--------------|
-| Problem sets |     8 |          80% |
+| Problem sets |     4 |          80% |
 | Final exam   |     1 |          20% |
 |--------------+-------+--------------|
 
+* Schedule
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+*** Draft                                                     :noexport:
+
+Ideas for problem sets
+- some to derive analytically the posterior with conjugate prior
+- some with non analytical solution, bot easy to simulate
+- some intractable
+- Review previous solutions of PS, as ask how to estimate prior using MCMC
+  
+Topics
+- Hierarchical models
+- MCMC
+  - MCMC estimation
+  - MCMC convergence
+	- cite:cowles1996markov
+- Summaries of the posterior
+  - mean
+  - median
+  - 95% HPDI
+  - BIC, DIC
+  - Bayes Factor
+- Predictive and model quality checks!
+- Examples
+  - FMM of normals
+
+
+#+ATTR_LATEX: :align |c|c|l|p{9cm}|l| :font \footnotesize
+|  # |      |        |                                             |                                                                     |            | <10>       | <30>                           |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+|  # | Week | Day    | Topic                                       | Lecture content                                                     |            | Assignment | Assignment Content             |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+|  1 |    1 | W10/02 | Introduction                                | Course introduction, Bayes rule                                     |            |            |                                |
+|  2 |    1 | F10/04 | Motivation for Bayesian Statistics          | de Finetti, Examples                                                |            |            |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+|    |      |        | *Subjective Bayes*                          |                                                                     |            |            |                                |
+|  3 |    1 | M10/07 | The prior distribution: Preliminaries       | Estimating the posterior, The Priors, Kernel, Exponential family    | JG 4.1-4.2 |            |                                |
+|  4 |    2 | W10/09 | Prior Distribution (conjugate priors)       | Conjugate Priors                                                    | JG 4.3     |            |                                |
+|  5 |    2 | F10/11 | Prior Distribution (conjugate priors)       | Examples of conjugate priors and useful integrals                   |            | PS1 (ho)   | (derive exp family for various dist, analytical der of normal-normal with many samples and sigma unknown ) |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+|    |      |        | *Objective Bayes* and *Sensitivity*         |                                                                     |            |            |                                |
+|  6 |    2 | M10/14 | Prior Distribution                          | Limitations of conjugacy and of subjective Bayes: Reparametrization |            |            |                                |
+|  7 |    3 | W10/16 | Prior Distribution                          | Jeffreys Prior                                                      |            |            |                                |
+|  8 |    3 | F10/18 | Sensitivity and Prior perturbation analysis | Reference prior, Sensitivity and Prior Perturbation Analysis        |            | PS2 (ho); *PS1 (d)* | (effect of diff priors)        |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+|    |      |        | *Sensitivity*                               |                                                                     |            |            |                                |
+|  9 |    3 | M10/21 | Sensitivity and Prior perturbation analysis |                                                                     |            |            |                                |
+| 10 |    4 | W10/23 | Hierarchical Bayesian Models                |                                                                     |            |            |                                |
+| 11 |    4 | F10/25 | MC methods                                  |                                                                     |            | PS3 (ho); *PS2 (d)* | (derive hiearachical, Sensitivity) |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 12 |    4 | M10/28 | MC indirect sampling                        |                                                                     |            |            |                                |
+| 13 |    5 | W10/30 |                                             |                                                                     |            |            |                                |
+| 14 |    5 | F11/01 |                                             |                                                                     |            | PS4 (ho); *PS3 (d)* |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 15 |    5 | M11/04 | MCMC intro                                  |                                                                     |            |            |                                |
+| 16 |    6 | W11/06 |                                             |                                                                     |            |            |                                |
+| 17 |    6 | F11/08 |                                             |                                                                     |            | PS5 (ho); *PS4 (d)* |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 18 |    6 | M11/11 | MCMC intro                                  |                                                                     |            |            |                                |
+| 19 |    7 | W11/13 |                                             |                                                                     |            |            |                                |
+| 20 |    7 | F11/15 |                                             |                                                                     |            | PS6 (ho); *PS5 (d)* |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 21 |    7 | M11/18 |                                             |                                                                     |            |            |                                |
+| 22 |    8 | W11/20 |                                             |                                                                     |            |            |                                |
+| 23 |    8 | F11/22 |                                             |                                                                     |            | PS7 (ho); *PS6 (d)* |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 24 |    8 | M11/25 | *Predictive and Summaries*                  |                                                                     |            |            |                                |
+| 25 |    9 | W11/27 | Summaries of the posterior                  |                                                                     |            | PS8 (ho); *PS7 (d)* |                                |
+| 26 |    9 | F11/29 | No class: *Thanksgiving Break*              |                                                                     |            |            |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 27 |    9 | M12/02 | Summaries of the posterior                  |                                                                     |            |            |                                |
+| 28 |   10 | W12/04 | Wrap-up                                     |                                                                     |            | *PS8 (d)*  |                                |
+| 29 |   10 | F12/06 | No class: *College Reading Period*          |                                                                     |            |            |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+| 30 |   10 | M12/09 | *Final Exam*                                |                                                                     |            | *Final Exam* |                                |
+|----+------+--------+---------------------------------------------+---------------------------------------------------------------------+------------+------------+--------------------------------|
+- ho: hand out
+- d: due date
+
+*** Calendar                                                   :2PS:noexport:
+#+ATTR_LATEX: :align |c|c|l|p{9cm}|l|l| :font \footnotesize
+|    |      |          |                                             |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|  # | Week | Day      | Topic                                       | Assignment          |
+|----+------+----------+---------------------------------------------+---------------------|
+|  1 |    1 | W10/02   | Introduction                                |                     |
+|  2 |    1 | F10/04   | Motivation for Bayesian Statistics          |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Subjective Bayes*                          |                     |
+|  3 |    1 | M10/07   | The prior distribution: Preliminaries       |                     |
+|  4 |    2 | W10/09   | Prior Distribution (conjugate priors)       |                     |
+|  5 |    2 | F10/11   | Prior Distribution (conjugate priors)       | PS1 (ho)            |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Objective Bayes* and *Sensitivity*         |                     |
+|  6 |    2 | M10/14   | Prior Distribution                          |                     |
+|  7 |    3 | W10/16   | Prior Distribution                          |                     |
+|  8 |    3 | F10/18   | Sensitivity and Prior perturbation analysis | PS2 (ho); *PS1 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Sensitivity*                               |                     |
+|  9 |    3 | M10/21   | Sensitivity and Prior perturbation analysis |                     |
+| 10 |    4 | W10/23   | Hierarchical Bayesian Models                |                     |
+| 11 |    4 | F10/25   | MC methods                                  | PS3 (ho); *PS2 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Monte Carlo Methods*                       |                     |
+| 12 |    4 | M10/28   | MC indirect sampling (RS)                   |                     |
+| 13 |    5 | W10/30   | MC indirect sampling (ARS, IS)              |                     |
+| 14 |    5 | F11/01   | MC indirect sampling (IS, AIS, wrap-up)     | PS4 (ho); *PS3 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Monte Carlo Markov Chain Methods*          |                     |
+| 15 |    5 | M11/04   | MCMC (Intuition, GBC, DBC)                  |                     |
+| 16 |    6 | W11/06   | MCMC (DBC and Metropolis-Hasting update)    |                     |
+| 17 |    6 | F11/08   | MCMC (Foundations of MCMC method)           | PS5 (ho); *PS4 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Various MCMC and Diagnostics*              |                     |
+| 18 |    6 | M11/11   | MCMC (MH Variants: Random Walk)             |                     |
+| 19 |    7 | W11/13   | MCMC (MH Variants: Gibbs, Slice Sampler)    |                     |
+| 20 |    7 | F11/15   | MCMC (Into Implementation)                  | PS6 (ho); *PS5 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Implementation*                            |                     |
+| 21 |    7 | M11/18   | MCMC (Implementation)                       |                     |
+| 22 |    8 | W11/20   | MCMC (Implementation)                       |                     |
+| 23 |    8 | F11/22   | MCMC (Implementation)                       | PS7 (ho); *PS6 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Predictive and Summaries*                  |                     |
+| 24 |    8 | M11/25   | MCMC (diagnostics)                          |                     |
+| 25 |    9 | W11/27   | Summaries of the posterior                  | PS8 (ho); *PS7 (d)* |
+| 26 |    9 | *F11/29* | No class: *Thanksgiving Break*              |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+| 27 |    9 | M12/02   | Model Choice and Predictive Analytics       |                     |
+| 28 |   10 | W12/04   | Wrap-up                                     | *PS8 (d)*           |
+| 29 |   10 | *F12/06* | No class: *College Reading Period*          |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+| 30 |   10 | M12/09   | *Final Exam*                                | *Final Exam*        |
+|----+------+----------+---------------------------------------------+---------------------|
+- ho: hand out
+- d: due date
+*** Calendar
+#+ATTR_LATEX: :align |c|c|l|p{9cm}|l|l| :font \footnotesize
+|----+------+----------+---------------------------------------------+---------------------|
+|  # | Week | Day      | Topic                                       | Assignment          |
+|----+------+----------+---------------------------------------------+---------------------|
+|  1 |    1 | W10/02   | Introduction                                |                     |
+|  2 |    1 | F10/04   | Motivation for Bayesian Statistics          |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Subjective Bayes*                          |                     |
+|  3 |    1 | M10/07   | The prior distribution: Preliminaries       |                     |
+|  4 |    2 | W10/09   | Prior Distribution (conjugate priors)       |                     |
+|  5 |    2 | F10/11   | Prior Distribution (conjugate priors)       |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Objective Bayes* and *Sensitivity*         |                     |
+|  6 |    2 | M10/14   | Prior Distribution                          |                     |
+|  7 |    3 | W10/16   | Prior Distribution                          |                     |
+|  8 |    3 | F10/18   | Sensitivity and Prior perturbation analysis | PS1 (ho)            |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Sensitivity*                               |                     |
+|  9 |    3 | M10/21   | Sensitivity and Prior perturbation analysis |                     |
+| 10 |    4 | W10/23   | Hierarchical Bayesian Models                |                     |
+| 11 |    4 | F10/25   | MC methods                                  |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Monte Carlo Methods*                       |                     |
+| 12 |    4 | M10/28   | MC indirect sampling (RS)                   |                     |
+| 13 |    5 | W10/30   | MC indirect sampling (ARS, IS)              |                     |
+| 14 |    5 | F11/01   | MC indirect sampling (IS, AIS, wrap-up)     | PS2 (ho); *PS1 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Monte Carlo Markov Chain Methods*          |                     |
+| 15 |    5 | M11/04   | MCMC (Intuition, GBC, DBC)                  |                     |
+| 16 |    6 | W11/06   | MCMC (DBC and Metropolis-Hasting update)    |                     |
+| 17 |    6 | F11/08   | MCMC (Foundations of MCMC method)           |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Various MCMC and Diagnostics*              |                     |
+| 18 |    6 | M11/11   | MCMC (MH Variants: Random Walk)             |                     |
+| 19 |    7 | W11/13   | MCMC (MH Variants: Gibbs, Slice Sampler)    |                     |
+| 20 |    7 | F11/15   | MCMC (Into Implementation)                  | PS3 (ho); *PS2 (d)* |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Implementation*                            |                     |
+| 21 |    7 | M11/18   | MCMC (Implementation)                       |                     |
+| 22 |    8 | W11/20   | MCMC (Implementation)                       |                     |
+| 23 |    8 | F11/22   | MCMC (Implementation)                       |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+|    |      |          | *Predictive and Summaries*                  |                     |
+| 24 |    8 | M11/25   | MCMC (diagnostics)                          |                     |
+| 25 |    9 | W11/27   | Summaries of the posterior                  | PS4 (ho); *PS3 (d)* |
+| 26 |    9 | *F11/29* | No class: *Thanksgiving Break*              |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+| 27 |    9 | M12/02   | Model Choice and Predictive Analytics       |                     |
+| 28 |   10 | W12/04   | Wrap-up                                     | *PS4 (d)*           |
+| 29 |   10 | *F12/06* | No class: *College Reading Period*          |                     |
+|----+------+----------+---------------------------------------------+---------------------|
+| 30 |   10 | M12/09   | *Final Exam*                                | *Final Exam*        |
+|----+------+----------+---------------------------------------------+---------------------|
+- ho: hand out
+- d: due date
 * Textbooks
 :PROPERTIES:
 :UNNUMBERED: t
@@ -70,7 +263,7 @@ The goal of this course is to give students an overview of the theory and method
   /Practical introduction of the concepts of Bayesian statistics with examples of application in social sciences./
 *** Recommended
 - Gelman, A., Carlin, J. B., Stern, H. S., & Rubin, D. B.  (2014) Bayesian Data Analysis, Chapman & Hall/CRC Boca Raton, FL, USA.\\
-  /Called for many people "The Bible", this book contains a comprehensive overview of many topics in Bayesian statistics./
+  /Called for many people uThe Bibleu, this book contains a comprehensive overview of many topics in Bayesian statistics./
 - Jackman, S. (2009)  Bayesian analysis for the social sciences , John Wiley & Sons.\\
   /The book contains more advanced treatment of some topics in Bayesian analysis./
 - Kruschke, J. (2015) Doing bayesian data analysis: a tutorial with r, jags, and stan, Academic Press.\\
@@ -117,4 +310,93 @@ The University of Chicago has a [[https://studentmanual.sites.uchicago.edu/Polic
    - DO NOT post your solutions to problem sets or exams in publicly-accessible websites, like pastebin, a public GitHub repository, GitHub gists, etc. While these tools may seem like convenient mechanisms for sharing code with an instructor/TA or with a project partner, they can also expose your code to other students in the class. If you do post your solution in a publicly-accessible location, and we find out about it outside of a plagiarism incident, you will just get a warning. However, if another student in the class uses code that you posted on such a site (even if you did not intend for that code to be used by someone else), you be considered an equally guilty party in a plagiarism offense, and will receive the exact same penalty as the student who used your code.
 
 
+
+\pagebreak
+* Scheduled readings
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+** Lecture 1: Introduction
+*** Suggested
+**** bibentry:fienberg2006did
+** Lecture 2: Motivation for Bayesian Statistics
+*** Required
+**** bibentry:gill2014bayesian
+***** Ch 2.1: Purpose
+***** Ch 2.3: The Basic Bayesian Framework (only subsection 2.3.1)
+***** Ch 2.4: Bayesian "Learning"
+***** Ch 2.6: Bayesian versus Non-Bayesian Approaches
+** Lecture 3: Prior Distribution: Preliminaries
+*** Required
+**** bibentry:gill2014bayesian
+***** Ch 2.5: Comments on Prior Distributions
+***** Ch 4.1: A Prior Discussion of Priors
+*** Suggested
+**** bibentry:wasserman-2006-frequestist
+** Lecture 4 and 5: Prior Distribution (conjugate priors)
+*** Required
+**** bibentry:gill2014bayesian  
+***** ch 4.3: Conjugate Priors (subsections 4.3.1-4.3.3)
+** Lecture 6 and 7:
+*** Required
+**** bibentry:gill2014bayesian 
+***** Ch 4.3.3: Limitations of Conjugacy 
+***** Ch 4.4.2: Jeffreys Prior (all subsections)
+** Lecture 8, 9:
+*** Required
+**** bibentry:gill2014bayesian 
+***** Ch 6.2.1 Global Sensitivity Analysis
+***** Ch 6.2.2 Local Sensitivity Analysis
+***** Ch 6.2.3 Global and Local Sensitivity Analysis with Recidivism Data
+** Lecture 10:
+*** Required
+**** bibentry:gill2014bayesian 
+***** Ch 12.5 Essential Structure of the Bayesian Hierarchical Model 
+***** Ch 12.6 The General Role of Priors and Hyperpriors
+** Lecture 11: MC methods
+*** Required
+**** bibentry:gill2014bayesian 
+***** Ch 9.1 Background
+***** Ch 9.2 Basic Monte Carlo Integration
+*** Suggested
+**** bibentry:robert2011short
+** Lecture 12: MC indirect sampling
+*** Required
+**** bibentry:gill2014bayesian 
+***** Ch 9.3 Rejection Sampling
+** Lecture 13-14
+*** Required
+**** TBA
+** Lecture 15
+*** Required
+**** bibentry:robert2011short
+** Lecture 16
+*** Required
+**** bibentry:chib1995understanding
+*** Suggested
+**** bibentry:metropolis1953equation
+**** bibentry:hastings1970monte
+**** bibentry:geman1984stochastic
+**** bibentry:gelfand1990sampling
+** Lecture 17
+*** Suggested
+**** bibentry:mengersen1996rates
+** Lecture 18-29
+*** Required
+**** TBA
+** Lecture 25: Summaries of the Posterior
+*** Required
+**** bibentry:gill2014bayesian 
+***** Ch 2.3.2 Summarizing Posterior Distributions with Intervals
+***** Ch 2.3.3 Quantile Posterior Summaries
+** Lecture 27: 
+*** Required
+**** TBA
+
+*                                                                    :ignore:
+#+LATEX_HEADER: % ================================================
+\pagebreak
+bibliographystyle:apalike
+bibliography:~/Dropbox/CienciasSociais/references/references.bib
+#+LATEX_HEADER: % ================================================ 
 
