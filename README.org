@@ -1,12 +1,15 @@
 
 * MACS 30301 - Introduction to Bayesian Statistics 
 
-#+BEGIN_CENTER
+
 Computational Social Science\\
+
 Division of the Social Sciences\\
+
 University of Chicago\\
+
 Autumn/2019
-#+END_CENTER
+
 
 - See [[./syllabus.pdf][Syllabus]]
 
