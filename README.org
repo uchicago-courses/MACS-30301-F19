@@ -1,2 +1,25 @@
 
-- See [[./syllabus.org][Syllabus]]
+- See [[./syllabus.pdf][Syllabus]]
+
+* Course information
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+ATTR_LaTeX: :center t :align rl
+| *Instructor:*   | [[https://.diogoferrari.com][Diogo Ferrari]]                          |
+| *e-mail:*       | [[mailto:diogoferrari@uchicago.edu][diogoferrari@uchicago.edu]]              |
+| *Office:*       | 5730 S. Woodlawn, Room 406             |
+| *Office-hours:* | Monday 15:00-17:00 (or by appointment) |
+|                 |                                        |
+
+
+- *Meeting day/time*  MWF 10:30-11:20
+- *Location*: Stuart Hall 105
+
+* Description
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+The goal of this course is to give students an overview of the theory and methods for data analyses using the Bayesian paradigm. Topics include: (1) foundations of Bayesian inference; (2) development of Bayesian models and prior choices; (3) analytical and simulation techniques for posterior estimation; (4) model choice and diagnostics; (5) sensitivity analysis, and; (6) introduction to Monte Carlo Markov Chain (MCMC) simulations. Students will also learn how to estimate and summarize Bayesian models using Bayesian statistical packages (R/JAGS/Bugs). The course will use working examples with real application of Bayesian analysis in social sciences. Prerequisites: Basic knowledge of probability (e.g., joint and conditional distributions, expectation, variance) and introductory-level experience with R or Python (Note: Open to Advanced Undergraduates with Instructor Permission)
